@@ -1,0 +1,296 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		46ABE0431D10A27B002C0E8F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46ABE0421D10A27B002C0E8F /* AppDelegate.swift */; };
+		46ABE0451D10A27B002C0E8F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46ABE0441D10A27B002C0E8F /* ViewController.swift */; };
+		46ABE0481D10A27B002C0E8F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46ABE0461D10A27B002C0E8F /* Main.storyboard */; };
+		46ABE04A1D10A27B002C0E8F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46ABE0491D10A27B002C0E8F /* Assets.xcassets */; };
+		46ABE04D1D10A27B002C0E8F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46ABE04B1D10A27B002C0E8F /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		46ABE03F1D10A27B002C0E8F /* GetOnTheBus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GetOnTheBus.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		46ABE0421D10A27B002C0E8F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		46ABE0441D10A27B002C0E8F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		46ABE0471D10A27B002C0E8F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		46ABE0491D10A27B002C0E8F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		46ABE04C1D10A27B002C0E8F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		46ABE04E1D10A27B002C0E8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		46ABE03C1D10A27B002C0E8F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		46ABE0361D10A27B002C0E8F = {
+			isa = PBXGroup;
+			children = (
+				46ABE0411D10A27B002C0E8F /* GetOnTheBus */,
+				46ABE0401D10A27B002C0E8F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		46ABE0401D10A27B002C0E8F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				46ABE03F1D10A27B002C0E8F /* GetOnTheBus.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		46ABE0411D10A27B002C0E8F /* GetOnTheBus */ = {
+			isa = PBXGroup;
+			children = (
+				46ABE0421D10A27B002C0E8F /* AppDelegate.swift */,
+				46ABE0441D10A27B002C0E8F /* ViewController.swift */,
+				46ABE0461D10A27B002C0E8F /* Main.storyboard */,
+				46ABE0491D10A27B002C0E8F /* Assets.xcassets */,
+				46ABE04B1D10A27B002C0E8F /* LaunchScreen.storyboard */,
+				46ABE04E1D10A27B002C0E8F /* Info.plist */,
+			);
+			path = GetOnTheBus;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		46ABE03E1D10A27B002C0E8F /* GetOnTheBus */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 46ABE0511D10A27B002C0E8F /* Build configuration list for PBXNativeTarget "GetOnTheBus" */;
+			buildPhases = (
+				46ABE03B1D10A27B002C0E8F /* Sources */,
+				46ABE03C1D10A27B002C0E8F /* Frameworks */,
+				46ABE03D1D10A27B002C0E8F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GetOnTheBus;
+			productName = GetOnTheBus;
+			productReference = 46ABE03F1D10A27B002C0E8F /* GetOnTheBus.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		46ABE0371D10A27B002C0E8F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Salar Kohnechi";
+				TargetAttributes = {
+					46ABE03E1D10A27B002C0E8F = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = EQ39KCD6SJ;
+					};
+				};
+			};
+			buildConfigurationList = 46ABE03A1D10A27B002C0E8F /* Build configuration list for PBXProject "GetOnTheBus" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 46ABE0361D10A27B002C0E8F;
+			productRefGroup = 46ABE0401D10A27B002C0E8F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				46ABE03E1D10A27B002C0E8F /* GetOnTheBus */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		46ABE03D1D10A27B002C0E8F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46ABE04D1D10A27B002C0E8F /* LaunchScreen.storyboard in Resources */,
+				46ABE04A1D10A27B002C0E8F /* Assets.xcassets in Resources */,
+				46ABE0481D10A27B002C0E8F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		46ABE03B1D10A27B002C0E8F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46ABE0451D10A27B002C0E8F /* ViewController.swift in Sources */,
+				46ABE0431D10A27B002C0E8F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		46ABE0461D10A27B002C0E8F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				46ABE0471D10A27B002C0E8F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		46ABE04B1D10A27B002C0E8F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				46ABE04C1D10A27B002C0E8F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		46ABE04F1D10A27B002C0E8F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		46ABE0501D10A27B002C0E8F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		46ABE0521D10A27B002C0E8F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = GetOnTheBus/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Dr.-Tech-PC.GetOnTheBus";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		46ABE0531D10A27B002C0E8F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = GetOnTheBus/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Dr.-Tech-PC.GetOnTheBus";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		46ABE03A1D10A27B002C0E8F /* Build configuration list for PBXProject "GetOnTheBus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46ABE04F1D10A27B002C0E8F /* Debug */,
+				46ABE0501D10A27B002C0E8F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		46ABE0511D10A27B002C0E8F /* Build configuration list for PBXNativeTarget "GetOnTheBus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46ABE0521D10A27B002C0E8F /* Debug */,
+				46ABE0531D10A27B002C0E8F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 46ABE0371D10A27B002C0E8F /* Project object */;
+}
