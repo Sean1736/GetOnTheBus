@@ -11,30 +11,67 @@ import MapKit
 
 class ViewController: UIViewController, MKMapViewDelegate, UITableViewDataSource, UITableViewDelegate {
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var mapView: MKMapView!
+    @IBOutlet weak var segmentControl: UISegmentedControl!
 
+    var busStops = NSDictionary()
+    var busStopsArray = [NSDictionary]()
+    let locationManager = CLLocationManager()
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        self.title = "Map"
+        let url = NSURL(string: "https://s3.amazonaws.com/mmios8week/bus.json")
+        let session = NSURLSession.sharedSession()
+        let task = session.dataTaskWithURL(url!) { (data: NSData?, response: NSURLResponse?, error: NSError?) in
+            do {
+                self.busStops = try NSJSONSerialization.JSONObjectWithData(data!, options: .AllowFragments) as! NSDictionary
+                self.busStopsArray = self.busStops.objectForKey("row") as! [NSDictionary]
+            }
+            catch let error as NSError {
+                print("JSON Error: \(error.localizedDescription)")
+            }
+            dispatch_async(dispatch_get_main_queue(), {
+                self.tableView.reloadData()
+            })
+        }
+        task.resume()
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+
+
+
 
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return busStopsArray.count
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("CellID", forIndexPath: indexPath)
+        let cell = tableView.dequeueReusableCellWithIdentifier("CellID")!
+        let stops = self.busStopsArray[indexPath.row] as NSDictionary
+        cell.textLabel!.text = stops.objectForKey("cta_stop_name") as? String
+        cell.detailTextLabel?.text = stops.objectForKey("routes") as? String
+        
+        
         return cell
     }
 
+    
+    @IBAction func segmentedControlTapped(sender: UISegmentedControl) {
+    
+    if sender.selectedSegmentIndex == 0 {
+    mapView.hidden = false
+    self.title = "Map"
+    }
+    else {
+    mapView.hidden = true
+    self.title = "List"
+
 }
 
-
-
+}
+}
 //MVP
 //1. As a user, I want to view all transit stops on a map
 //On a map, show a pin for each stop from: https://s3.amazonaws.com/mmios8week/bus.json

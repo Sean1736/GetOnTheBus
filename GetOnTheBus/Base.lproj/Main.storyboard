@@ -26,6 +26,9 @@
                                     <segment title="First"/>
                                     <segment title="Second"/>
                                 </segments>
+                                <connections>
+                                    <action selector="segmentedControlTapped:" destination="BYZ-38-t0r" eventType="valueChanged" id="R7e-Iv-gbq"/>
+                                </connections>
                             </segmentedControl>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="u0R-Dk-N60">
                                 <rect key="frame" x="0.0" y="64" width="600" height="436"/>
@@ -69,6 +72,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="Eke-yt-kna"/>
                     <connections>
+                        <outlet property="mapView" destination="u0R-Dk-N60" id="k2q-ge-nWt"/>
+                        <outlet property="segmentControl" destination="xSN-Hh-Mlg" id="6no-b2-lEe"/>
                         <outlet property="tableView" destination="g5y-fB-gWg" id="l6j-IC-YuL"/>
                     </connections>
                 </viewController>
